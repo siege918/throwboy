@@ -1,5 +1,12 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
+/// @DnDHash : 536E32A0
+/// @DnDArgument : "expr" "2"
+/// @DnDArgument : "var" "__facing"
+__facing = 2;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
 /// @DnDHash : 5704CF17
 /// @DnDArgument : "expr" "1.5"
 /// @DnDArgument : "var" "__speed"

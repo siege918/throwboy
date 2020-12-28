@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "player_left",
-    "path": "sprites/player_left/player_left.yy",
+    "name": "player_front",
+    "path": "sprites/player_front/player_front.yy",
   },
   "solid": true,
   "visible": true,
@@ -36,6 +36,10 @@
     {"isDnD":true,"eventNum":38,"eventType":10,"collisionObjectId":null,"parent":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":true,"eventNum":40,"eventType":10,"collisionObjectId":null,"parent":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":true,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":true,"eventNum":38,"eventType":9,"collisionObjectId":null,"parent":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":true,"eventNum":39,"eventType":9,"collisionObjectId":null,"parent":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":true,"eventNum":40,"eventType":9,"collisionObjectId":null,"parent":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":true,"eventNum":37,"eventType":9,"collisionObjectId":null,"parent":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

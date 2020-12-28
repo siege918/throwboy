@@ -7,7 +7,6 @@
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":1,},
     {"id":{"name":"player_back","path":"sprites/player_back/player_back.yy",},"order":5,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
-    {"id":{"name":"lil_man","path":"sprites/lil_man/lil_man.yy",},"order":0,},
     {"id":{"name":"player_front","path":"sprites/player_front/player_front.yy",},"order":4,},
     {"id":{"name":"player_left","path":"sprites/player_left/player_left.yy",},"order":7,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
