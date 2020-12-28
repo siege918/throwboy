@@ -46,5 +46,13 @@ if((l2789B97E_0))
 		/// @DnDArgument : "expr" "true"
 		/// @DnDArgument : "var" "throwable.carried"
 		throwable.carried = true;
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 131CA46E
+		/// @DnDParent : 2E6EF177
+		/// @DnDArgument : "expr" "5"
+		/// @DnDArgument : "var" "throwable.speed"
+		throwable.speed = 5;
 	}
 }

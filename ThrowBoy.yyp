@@ -1,7 +1,9 @@
 {
   "resources": [
     {"id":{"name":"wall","path":"sprites/wall/wall.yy",},"order":0,},
+    {"id":{"name":"oMiasma","path":"objects/oMiasma/oMiasma.yy",},"order":6,},
     {"id":{"name":"floor","path":"sprites/floor/floor.yy",},"order":1,},
+    {"id":{"name":"miasma","path":"sprites/miasma/miasma.yy",},"order":8,},
     {"id":{"name":"oFloor","path":"objects/oFloor/oFloor.yy",},"order":2,},
     {"id":{"name":"player_right","path":"sprites/player_right/player_right.yy",},"order":4,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":1,},

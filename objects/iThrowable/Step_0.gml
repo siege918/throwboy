@@ -22,8 +22,8 @@ if(carried)
 	/// @DnDVersion : 1
 	/// @DnDHash : 5C0466EB
 	/// @DnDParent : 306AD272
-	/// @DnDArgument : "expr" "point_distance(x, y, new_x, new_y) < (__speed * 2)"
-	if(point_distance(x, y, new_x, new_y) < (__speed * 2))
+	/// @DnDArgument : "expr" "point_distance(x, y, new_x, new_y) < (__speed + 1)"
+	if(point_distance(x, y, new_x, new_y) < (__speed + 1))
 	{
 		/// @DnDAction : YoYo Games.Movement.Set_Speed
 		/// @DnDVersion : 1
@@ -46,11 +46,19 @@ if(carried)
 		/// @DnDArgument : "y" "new_y"
 		direction = point_direction(x, y, new_x, new_y);
 	
-		/// @DnDAction : YoYo Games.Movement.Set_Speed
+		/// @DnDAction : YoYo Games.Common.If_Expression
 		/// @DnDVersion : 1
-		/// @DnDHash : 2A7D30B8
+		/// @DnDHash : 0558B4FB
 		/// @DnDParent : 4DAB8125
-		/// @DnDArgument : "speed" "__speed"
-		speed = __speed;
+		/// @DnDArgument : "expr" "__speed > speed"
+		if(__speed > speed)
+		{
+			/// @DnDAction : YoYo Games.Movement.Set_Speed
+			/// @DnDVersion : 1
+			/// @DnDHash : 2A7D30B8
+			/// @DnDParent : 0558B4FB
+			/// @DnDArgument : "speed" "__speed"
+			speed = __speed;
+		}
 	}
 }
