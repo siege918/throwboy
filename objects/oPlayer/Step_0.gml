@@ -169,9 +169,12 @@ if(__x_direction != 0 || __y_direction != 0)
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
 	/// @DnDHash : 2C154021
+	/// @DnDInput : 2
 	/// @DnDParent : 147E5340
-	/// @DnDArgument : "function" "motion_set(movement_direction, __speed)"
-	motion_set(movement_direction, __speed)();
+	/// @DnDArgument : "function" "motion_set"
+	/// @DnDArgument : "arg" "movement_direction"
+	/// @DnDArgument : "arg_1" "__speed"
+	motion_set(movement_direction, __speed);
 }
 
 /// @DnDAction : YoYo Games.Common.Else
