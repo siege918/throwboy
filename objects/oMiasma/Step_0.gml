@@ -8,8 +8,8 @@ throwable = oPlayer.carrying;
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 00E7D3AD
-/// @DnDArgument : "expr" "throwable"
-if(throwable)
+/// @DnDArgument : "expr" "throwable && instance_exists(throwable)"
+if(throwable && instance_exists(throwable))
 {
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1

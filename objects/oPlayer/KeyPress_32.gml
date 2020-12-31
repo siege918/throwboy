@@ -1,8 +1,8 @@
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 55310E9F
-/// @DnDArgument : "expr" "carrying"
-if(carrying)
+/// @DnDArgument : "expr" "carrying && instance_exists(carrying) "
+if(carrying && instance_exists(carrying) )
 {
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -219,8 +219,8 @@ if((l2789B97E_0))
 	/// @DnDVersion : 1
 	/// @DnDHash : 2E6EF177
 	/// @DnDParent : 2789B97E
-	/// @DnDArgument : "expr" "!carrying && !throwable.throwing"
-	if(!carrying && !throwable.throwing)
+	/// @DnDArgument : "expr" "!carrying && !throwable.throwing && !throwable.broken"
+	if(!carrying && !throwable.throwing && !throwable.broken)
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
