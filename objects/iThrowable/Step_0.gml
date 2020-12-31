@@ -21,6 +21,8 @@ if(carried)
 	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
 	/// @DnDHash : 5C0466EB
+	/// @DnDBreak : 1
+
 	/// @DnDParent : 306AD272
 	/// @DnDArgument : "expr" "point_distance(x, y, new_x, new_y) < (__speed + 1)"
 	if(point_distance(x, y, new_x, new_y) < (__speed + 1))
