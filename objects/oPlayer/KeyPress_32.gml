@@ -219,8 +219,8 @@ if((l2789B97E_0))
 	/// @DnDVersion : 1
 	/// @DnDHash : 2E6EF177
 	/// @DnDParent : 2789B97E
-	/// @DnDArgument : "expr" "!carrying"
-	if(!carrying)
+	/// @DnDArgument : "expr" "!carrying && !throwable.throwing"
+	if(!carrying && !throwable.throwing)
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
