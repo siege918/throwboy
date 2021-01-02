@@ -63,4 +63,20 @@ if(carried)
 			speed = __speed;
 		}
 	}
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 6D635F19
+	/// @DnDParent : 306AD272
+	/// @DnDArgument : "expr" "layer_get_id("Carrying_instances")"
+	/// @DnDArgument : "var" "layer"
+	layer = layer_get_id("Carrying_instances");
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 0F2D655C
+	/// @DnDParent : 306AD272
+	/// @DnDArgument : "expr" "-1"
+	/// @DnDArgument : "var" "depth"
+	depth = -1;
 }

@@ -106,11 +106,20 @@ if(throwing)
 		sprite_index = jar_broken;
 		image_index = 0;
 	
+		/// @DnDAction : YoYo Games.Audio.Play_Audio
+		/// @DnDVersion : 1
+		/// @DnDHash : 03297C89
+		/// @DnDParent : 4427DF8D
+		/// @DnDArgument : "soundid" "crash"
+		/// @DnDSaveInfo : "soundid" "crash"
+		audio_play_sound(crash, 0, 0);
+	
 		/// @DnDAction : YoYo Games.Instances.Set_Alarm
 		/// @DnDVersion : 1
 		/// @DnDHash : 440A5AD3
 		/// @DnDParent : 4427DF8D
-		alarm_set(0, 30);
+		/// @DnDArgument : "steps" "10"
+		alarm_set(0, 10);
 	}
 }
 
