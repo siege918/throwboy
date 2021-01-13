@@ -226,8 +226,8 @@ else
 		/// @DnDVersion : 1
 		/// @DnDHash : 2E6EF177
 		/// @DnDParent : 2789B97E
-		/// @DnDArgument : "expr" "!carrying && !throwable.throwing && !throwable.broken"
-		if(!carrying && !throwable.throwing && !throwable.broken)
+		/// @DnDArgument : "expr" "!carrying && !throwable.throwing && !throwable.broken && !throwable.growing"
+		if(!carrying && !throwable.throwing && !throwable.broken && !throwable.growing)
 		{
 			/// @DnDAction : YoYo Games.Common.Variable
 			/// @DnDVersion : 1

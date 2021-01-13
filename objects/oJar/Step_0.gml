@@ -74,12 +74,20 @@ if(throwing)
 		vspeed += .125;
 	}
 
+	/// @DnDAction : YoYo Games.Common.Temp_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 32C21C8F
+	/// @DnDParent : 563F90D6
+	/// @DnDArgument : "var" "reachedMaxDistance"
+	/// @DnDArgument : "value" "point_distance(x, throw_start_y, throw_start_x, throw_start_y) > throw_distance || point_distance(throw_start_x, y, throw_start_x, throw_start_y) > throw_distance"
+	var reachedMaxDistance = point_distance(x, throw_start_y, throw_start_x, throw_start_y) > throw_distance || point_distance(throw_start_x, y, throw_start_x, throw_start_y) > throw_distance;
+
 	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
 	/// @DnDHash : 4427DF8D
 	/// @DnDParent : 563F90D6
-	/// @DnDArgument : "expr" "point_distance(x, throw_start_y, throw_start_x, throw_start_y) > throw_distance || point_distance(throw_start_x, y, throw_start_x, throw_start_y) > throw_distance"
-	if(point_distance(x, throw_start_y, throw_start_x, throw_start_y) > throw_distance || point_distance(throw_start_x, y, throw_start_x, throw_start_y) > throw_distance)
+	/// @DnDArgument : "expr" "reachedMaxDistance"
+	if(reachedMaxDistance)
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
