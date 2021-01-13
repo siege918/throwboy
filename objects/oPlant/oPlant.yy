@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "jar",
-    "path": "sprites/jar/jar.yy",
+    "name": "plant",
+    "path": "sprites/plant/plant.yy",
   },
   "solid": true,
   "visible": true,
@@ -24,19 +24,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":true,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oJar","path":"objects/oJar/oJar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":true,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"oJar","path":"objects/oJar/oJar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":true,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oPlant","path":"objects/oPlant/oPlant.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":true,"eventNum":2,"eventType":3,"collisionObjectId":null,"parent":{"name":"oPlant","path":"objects/oPlant/oPlant.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [
-    {"varType":0,"value":"80","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"throw_distance","tags":[],"resourceType":"GMObjectProperty",},
-  ],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oJar",
+  "name": "oPlant",
   "tags": [],
   "resourceType": "GMObject",
 }
