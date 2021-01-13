@@ -10,6 +10,30 @@ event_inherited();
 /// @DnDArgument : "expr" "throwing"
 if(throwing)
 {
+	/// @DnDAction : YoYo Games.Common.Temp_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 43E8CB84
+	/// @DnDParent : 563F90D6
+	/// @DnDArgument : "var" "reachedFloor"
+	/// @DnDArgument : "value" "false"
+	var reachedFloor = false;
+
+	/// @DnDAction : YoYo Games.Common.Temp_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 7CFB1F11
+	/// @DnDParent : 563F90D6
+	/// @DnDArgument : "var" "hitWall"
+	/// @DnDArgument : "value" "false"
+	var hitWall = false;
+
+	/// @DnDAction : YoYo Games.Common.Temp_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 12D6011D
+	/// @DnDParent : 563F90D6
+	/// @DnDArgument : "var" "reachedMaxDistance"
+	/// @DnDArgument : "value" "false"
+	var reachedMaxDistance = false;
+
 	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
 	/// @DnDHash : 1EAC117E
@@ -68,30 +92,73 @@ if(throwing)
 		/// @DnDVersion : 1
 		/// @DnDHash : 1CDD43F7
 		/// @DnDParent : 2463A124
-		/// @DnDArgument : "speed" ".125"
+		/// @DnDArgument : "speed" ".17"
 		/// @DnDArgument : "speed_relative" "1"
 		/// @DnDArgument : "type" "2"
-		vspeed += .125;
+		vspeed += .17;
+	
+		/// @DnDAction : YoYo Games.Common.If_Expression
+		/// @DnDVersion : 1
+		/// @DnDHash : 202F2C59
+		/// @DnDParent : 2463A124
+		/// @DnDArgument : "expr" "y + 16 > floor_y"
+		if(y + 16 > floor_y)
+		{
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 39958F49
+			/// @DnDBreak : 1
+		
+			/// @DnDParent : 202F2C59
+			/// @DnDArgument : "expr" "true"
+			/// @DnDArgument : "var" "reachedFloor"
+			reachedFloor = true;
+		}
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 19FCA0C6
+		/// @DnDParent : 2463A124
+		/// @DnDArgument : "expr" "collision_point(x, floor_y, oWall, false, true) || collision_point(x + 16, floor_y, oWall, false, true)"
+		/// @DnDArgument : "var" "hitWall"
+		hitWall = collision_point(x, floor_y, oWall, false, true) || collision_point(x + 16, floor_y, oWall, false, true);
 	}
 
-	/// @DnDAction : YoYo Games.Common.Temp_Variable
+	/// @DnDAction : YoYo Games.Common.Else
 	/// @DnDVersion : 1
-	/// @DnDHash : 32C21C8F
+	/// @DnDHash : 7FCB4FDD
 	/// @DnDParent : 563F90D6
-	/// @DnDArgument : "var" "reachedMaxDistance"
-	/// @DnDArgument : "value" "point_distance(x, throw_start_y, throw_start_x, throw_start_y) > throw_distance || point_distance(throw_start_x, y, throw_start_x, throw_start_y) > throw_distance"
-	var reachedMaxDistance = point_distance(x, throw_start_y, throw_start_x, throw_start_y) > throw_distance || point_distance(throw_start_x, y, throw_start_x, throw_start_y) > throw_distance;
+	else
+	{
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 6B60A593
+		/// @DnDParent : 7FCB4FDD
+		/// @DnDArgument : "expr" "collision_point(x + 8, y, oWall, false, true) || collision_point(x + 8, y + 16, oWall, false, true)"
+		/// @DnDArgument : "var" "hitWall"
+		hitWall = collision_point(x + 8, y, oWall, false, true) || collision_point(x + 8, y + 16, oWall, false, true);
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 10064F32
+		/// @DnDParent : 7FCB4FDD
+		/// @DnDArgument : "expr" "point_distance(x, throw_start_y, throw_start_x, throw_start_y) > throw_distance || point_distance(throw_start_x, y, throw_start_x, throw_start_y) > throw_distance"
+		/// @DnDArgument : "var" "reachedMaxDistance"
+		reachedMaxDistance = point_distance(x, throw_start_y, throw_start_x, throw_start_y) > throw_distance || point_distance(throw_start_x, y, throw_start_x, throw_start_y) > throw_distance;
+	}
 
 	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
 	/// @DnDHash : 4427DF8D
 	/// @DnDParent : 563F90D6
-	/// @DnDArgument : "expr" "reachedMaxDistance"
-	if(reachedMaxDistance)
+	/// @DnDArgument : "expr" "reachedMaxDistance || reachedFloor || hitWall"
+	if(reachedMaxDistance || reachedFloor || hitWall)
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 239641AA
+		/// @DnDBreak : 1
+	
 		/// @DnDParent : 4427DF8D
 		/// @DnDArgument : "expr" "false"
 		/// @DnDArgument : "var" "throwing"

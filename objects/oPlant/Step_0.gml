@@ -63,6 +63,21 @@ if(carried)
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
+		/// @DnDHash : 406586AC
+		/// @DnDParent : 72B1764E
+		/// @DnDArgument : "expr" "floor_y"
+		/// @DnDArgument : "var" "carriedItem.floor_y"
+		carriedItem.floor_y = floor_y;
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 11366F00
+		/// @DnDParent : 72B1764E
+		/// @DnDArgument : "var" "floor_y"
+		floor_y = 0;
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
 		/// @DnDHash : 2A515DE3
 		/// @DnDParent : 72B1764E
 		/// @DnDArgument : "expr" "carriedItem"
