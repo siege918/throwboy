@@ -157,8 +157,6 @@ if(throwing)
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 239641AA
-		/// @DnDBreak : 1
-	
 		/// @DnDParent : 4427DF8D
 		/// @DnDArgument : "expr" "false"
 		/// @DnDArgument : "var" "throwing"

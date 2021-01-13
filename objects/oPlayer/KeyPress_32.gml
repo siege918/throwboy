@@ -26,9 +26,9 @@ if(carrying && instance_exists(carrying) )
 	/// @DnDVersion : 1
 	/// @DnDHash : 52BD3E6F
 	/// @DnDParent : 55310E9F
-	/// @DnDArgument : "expr" "y + 16"
+	/// @DnDArgument : "expr" "y + 15"
 	/// @DnDArgument : "var" "carrying.floor_y"
-	carrying.floor_y = y + 16;
+	carrying.floor_y = y + 15;
 
 	/// @DnDAction : YoYo Games.Switch.Switch
 	/// @DnDVersion : 1
